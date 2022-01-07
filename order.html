@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ORDER NOW</title>
+	<link rel="stylesheet" type="text/css" href="order2.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="icon" href="image/icon.jpg"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" intengrity="sha384-wvfxpqpZZVQGK6TAh5V1GOfQNHSoD2xbE+QkPxCAF1NEevoEH3S10sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="hero">
+		<div class="nav-bar">
+			<div class="nav-logo">
+				<img src="image/yoola.jpg">
+			</div>
+			<div class="nav-links" id="nav-links">
+				<i class="fa fa-close" onclick="closeMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+				</ul>
+				<button type="button" class="btn"><a href="order.html">ORDER NOW</a></button>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+		</div>
+	<div class="wrapper">
+<h2>Order Form</h2>
+<form method="POST">
+	<h4>Account</h4>
+	<div class="input-group">
+<div class="input-box">
+<input type="text" placeholder="Full Name" name="full_name" id="full_name" required class="name">
+<i class="fa fa-user icon"></i>
+</div>
+<div class="input-box">
+<input type="email" placeholder="Email Name" name="email" id="email" required class="name">
+<i class="fa fa-envelope icon"></i>
+</div>
+	</div>
+
+<div class="input-group">
+	<div class="input-box">
+		<input type="text" placeholder="Product Name" required class="name" name="product_name" id="product_name">
+		<i class="fa fa-product-hunt icon"></i>	
+	</div>
+</div>
+<div class="input-group">
+	<div class="input-box">
+		<input type="text" placeholder="Product Size you want" required class="name" name="product_size" id="product_size">
+		<i class="fa fa-product-hunt icon"></i>		
+	</div>
+</div>
+
+
+<div class="input-group">
+	<div class="input-box">
+		<h4>District of Destination</h4>
+		<input type="text" placeholder="Destination" name="destination" id="destination" class="dob">
+		
+	</div>
+	<div class="input-box">
+		<h4>Gender</h4>
+		<input type="radio" id="b2" name="gender" checked class="radio">
+		<label for="b2">Male</label>
+		<input type="radio" id="b1" name="gender" checked class="radio">
+		<label for="b1">Female</label>	
+	</div>
+</div>
+
+<div class="input-group">
+	<div class="input-box">
+		<h4>Payment Details</h4>
+		<input type="radio" name="payment" id="pay2" checked class="radio">
+		<label for="pay2"><span>Airtel Money</span></label>
+		<input type="radio" name="payment" id="pay1" checked class="radio">
+		<label for="pay1"><span>Mtn Money</span></label>
+	</div>
+</div>
+<div class="input-group">
+	<div class="input-box">
+		<input type="number" placeholder="Phone Number" required class="name" name="phone_number" id="phone_number">
+
+		<i class="fa fa-phone icon"></i>
+
+	</div>
+</div>
+
+<div class="input-group">
+	<div class="input-box">
+		<button type="submit" name="submit" class="btn3">CONFIRM ORDER</button>
+		
+	</div>
+	
+</div>
+
+</form>		
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript">
+	var show = document.getElementById("nav-links");
+	function showMenu(){
+		show.style.right = "0";
+		}
+	function closeMenu(){
+		show.style.right = "-200px";
+		}
+	</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

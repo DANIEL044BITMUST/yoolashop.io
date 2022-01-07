@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>YOOLA ONLINE</title>
+	<link rel="icon" href="image/icon.jpg"/>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+	footer{
+		bottom: -5%;
+	}
+	.BTN3{
+		background: greenyellow;
+	}
+	.social-icons a{
+		text-decoration: none;
+		color: black;
+	}
+
+	@media only screen and (max-width: 700px){
+	.container{
+		top: 21%;
+	}
+	footer{
+		bottom: 20%;
+	}
+	@media only screen and (max-width: 800px){
+		
+	footer{
+		bottom: 15%;
+	}
+	@media only screen and (max-width: 1000px){
+		
+	footer{
+		bottom: 23.5%;
+	}
+
+</style>
+</head>
+<body>
+	<div class="hero">
+		<div class="nav-bar">
+			<div class="nav-logo">
+				<img src="image/yoola.jpg">
+			</div>
+			<div class="nav-links" id="nav-links">
+				<i class="fa fa-close" onclick="closeMenu()"></i>
+				<ul>
+					<li><a href="index.html" class="first">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+				</ul>
+				<button type="button" class="btn"><a href="order.html">ORDER NOW</a></button>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+		</div>
+		<div class="banner-title">
+			<h1>YOOLA ONLINE 
+				<br>SHOPPING SITE<br><span>
+				Your Online Best Stopping Shop
+
+			</span></h1>
+			<button type="button" class="btn BTN3"><a href="https://chat.whatsapp.com/Hh6HeAlNQHRDiLkAmC6P8m">JOIN OUR WHATSAPP GROUP</a></button>			
+		</div>
+		<div class="vertical-bar">
+			<div class="search-icon">
+				<i class="fa fa-th-list"></i>
+				<i class="fa fa-search"></i>
+			</div>
+			<div class="social-icons">
+	<a href="https://www.facebook.com/profile.php?id=100076307870483"><i class="fa ico fa-facebook"></i></a>
+			<a href="mailto:yoolaonlineshop@gmail.com"><i class="fa ico fa-google-plus"></i></a>
+				<a href="https://wa.me/256775043777"><i class="fa ico fa-whatsapp"></i></a>
+			</div>
+		</div>
+<!-- <footer>
+      <div class="footer-bottom">
+        <p>Copyright &copy;2021 Yoola Shopping. Designed by <b>Mac Danix Technologies</b></p>
+      </div>
+
+</footer> -->
+
+	</div>
+
+
+	<script type="text/javascript">
+	var show = document.getElementById("nav-links");
+	function showMenu(){
+		show.style.right = "0";
+		}
+	function closeMenu(){
+		show.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>
